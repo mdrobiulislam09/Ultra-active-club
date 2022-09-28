@@ -1,0 +1,27 @@
+.card img{
+    height: 200px;
+    width: 250px;
+    margin: 5px;
+    border-radius: 8px;
+}
+.card{
+    background-color: burlywood;
+    width: 260px;
+    border-radius: 5px;
+    text-align: center;
+}
+.card h3,h4,h5,p{
+    margin: 8px;
+    padding: 0;
+}
+.card button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 94px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 0 0 5px 5px;
+}

@@ -13,13 +13,19 @@ const Main = () => {
     },[])
     return (
         <div className='main-body'>
-            <div>
-                {
-                    cards.map(card=> <Cards 
-                        card={card}
-                        key = {card.id}
-                        ></Cards>)
-                }
+            <div className='card-body'>
+                <div>
+                    <h1>UtRA-Active-club</h1>
+                    <h3>Select today,s exercise</h3>
+                </div>
+                <div className='cards'>
+                    {
+                        cards.map(card=> <Cards 
+                            card={card}
+                            key = {card.id}
+                            ></Cards>)
+                    }
+                </div>
             </div>
             <div>
                 <Added></Added>
