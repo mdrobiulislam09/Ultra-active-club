@@ -5,12 +5,18 @@ import './Main.css'
 
 const Main = () => {
     const [cards, setCards]=useState([])
-    console.log(cards)
+    const [time, settime]=useState([])
+
+    // console.log(cards)
     useEffect(()=>{
         fetch('Packs.json')
         .then(res => res.json())
         .then(data => setCards(data))
     },[])
+    const addedlick = (cardds) => {
+        const newData = [...time,cardds];
+        settime(newData)
+    }
     return (
         <div className='main-body'>
             <div className='card-body'>
@@ -23,12 +29,13 @@ const Main = () => {
                         cards.map(card=> <Cards 
                             card={card}
                             key = {card.id}
+                            addedlick={addedlick}
                             ></Cards>)
                     }
                 </div>
             </div>
             <div>
-                <Added></Added>
+                <Added times={time}></Added>
             </div>
         </div>
     );

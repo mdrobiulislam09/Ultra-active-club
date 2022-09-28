@@ -1,14 +1,15 @@
 import React from 'react';
 import './Cards.css'
 
-const Cards = ({card}) => {
-    const {image, time, pakage}=card
+const Cards = ({card,addedlick}) => {
+    const {image, time, pakage}=card;
+    // console.log(addedlick)
     return (
         <div className='card'>
             <img src={image} alt="" />
             <h3>{pakage}</h3>
             <h4>{time}</h4>
-            <button>Add to List</button>
+            <button onClick={()=> addedlick(card)}>Add to List</button>
         </div>
     );
 };
