@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import {toast,ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Added.css'
@@ -13,13 +14,20 @@ const Added = (props) => {
         timess = timess + time.time;
     }
 
-    // let rest = 0;
-    
+    const [data, setData]= useState(0)
+
     const addRestTime = (id) => {
         localStorage.setItem('shopping-cart', JSON.stringify(id));
+        setData(id)
     }
-    
-    let storedCart =JSON.parse(localStorage.getItem('shopping-cart'));
+
+    useEffect(()=>{
+        const idData = JSON.parse(localStorage.getItem('shopping-cart'));
+        if(idData){
+            setData(idData)
+        }
+    },[data])
+
     return (
         <div className='main-page'>
             <div className='main-list'>
@@ -48,7 +56,7 @@ const Added = (props) => {
                     <h1>Exercise Details</h1>
                     <div>
                         <p>Exercise time: {timess} minit</p>
-                        <p>Break time: {storedCart} min</p>
+                        <p>Break time: {data} min</p>
                     </div>
                     <button onClick={diffToast}>Activity Completed</button>
                     <ToastContainer/>
