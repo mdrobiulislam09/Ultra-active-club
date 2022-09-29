@@ -8,7 +8,7 @@ const Cards = ({card,addedlick}) => {
         <div className='card'>
             <img src={image} alt="" />
             <h3>{pakage}</h3>
-            <h4>{time}</h4>
+            <h4>Gym-Time: {time}s</h4>
             <button onClick={()=> addedlick(card)}>Add to List</button>
         </div>
     );
