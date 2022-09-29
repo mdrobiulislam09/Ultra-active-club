@@ -2,14 +2,20 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
+
 .cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
 .card-body{
-    margin: 0 100px;
+    margin:0 50px;
 }
+.list-data{
+    margin-top: 20px;
+}
+
 .icon{
     display: flex;
     gap: 10px;
@@ -18,15 +24,18 @@
 .icon h1{
     color: rgb(62, 119, 62);
 }
+
 .icon h2{
     color: red;
     font-size: 60px;
 }
+
 @media screen and (max-width: 480px){
     .main-body{
         display: block;
     }
 }
+
 @media screen and (max-width: 480px){
     .cards{
         display: block;

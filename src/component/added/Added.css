@@ -2,14 +2,14 @@
     margin-right: 20px;
     text-align: center;
     background-color: burlywood;
+    border-radius: 5px;
+    padding: 20px;
   }
   .page{
     display: grid;
     grid-template-columns: 3fr 1fr;
   }
-  .main-list{
-    padding: 20px;
-  }
+  
   .profile{
     display: flex;
   }

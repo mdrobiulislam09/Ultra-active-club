@@ -25,3 +25,8 @@
     font-size: 15px;
     border-radius: 0 0 5px 5px;
 }
+@media screen and (max-width: 480px){
+    .card{
+        margin-top: 10px;
+    }
+}

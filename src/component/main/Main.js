@@ -3,7 +3,7 @@ import Added from '../added/Added';
 import Cards from '../cards/Cards';
 import './Main.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faGavel } from '@fortawesome/free-solid-svg-icons'
+import { faGavel } from '@fortawesome/free-solid-svg-icons'
 
 const Main = () => {
     const [cards, setCards]=useState([])
@@ -40,7 +40,7 @@ const Main = () => {
                     }
                 </div>
             </div>
-            <div>
+            <div className='list-data'>
                 <Added times={time}></Added>
             </div>
         </div>
