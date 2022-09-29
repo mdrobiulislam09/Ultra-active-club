@@ -1,5 +1,7 @@
 .main-page{
-    margin: 70px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: burlywood;
   }
   .page{
     display: grid;
@@ -7,7 +9,6 @@
   }
   .main-list{
     padding: 20px;
-    background-color: burlywood;
   }
   .profile{
     display: flex;
@@ -16,4 +17,13 @@
     width: 70px;
     height: 70px;
     border-radius: 50%;
+  }
+  .button button{
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(77, 151, 77);
+    font-size: 12px;
+    font-weight: bold;
   }

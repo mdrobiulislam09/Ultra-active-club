@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Added from '../added/Added';
 import Cards from '../cards/Cards';
 import './Main.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee, faGavel } from '@fortawesome/free-solid-svg-icons'
 
 const Main = () => {
     const [cards, setCards]=useState([])
@@ -22,7 +24,10 @@ const Main = () => {
         <div className='main-body'>
             <div className='card-body'>
                 <div>
-                    <h1>UtRA-Active-club</h1>
+                    <div className='icon'>
+                        <h2><FontAwesomeIcon icon={faGavel}></FontAwesomeIcon></h2>
+                        <h1>Power Zone</h1>
+                    </div>
                     <h3>Select today,s exercise</h3>
                 </div>
                 <div className='cards'>
