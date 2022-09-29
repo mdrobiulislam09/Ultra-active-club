@@ -17,6 +17,7 @@ const Main = () => {
         const newData = [...time,cardds];
         settime(newData)
     }
+    
     return (
         <div className='main-body'>
             <div className='card-body'>

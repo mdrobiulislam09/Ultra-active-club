@@ -10,3 +10,13 @@
 .card-body{
     margin: 0 100px;
 }
+@media screen and (max-width: 480px){
+    .main-body{
+        display: block;
+    }
+}
+@media screen and (max-width: 480px){
+    .cards{
+        display: block;
+    }
+}
